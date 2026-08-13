@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Pastas de dados pesados (futuro)
+/dataset/
+*.pt
+*.pth
