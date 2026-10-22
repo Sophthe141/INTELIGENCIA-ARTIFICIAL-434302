@@ -13,3 +13,6 @@ env/
 /dataset/
 *.pt
 *.pth
+
+# Livro
+livro/
