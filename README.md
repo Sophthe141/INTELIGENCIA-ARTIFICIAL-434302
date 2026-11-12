@@ -21,7 +21,6 @@ INTELIGENCIA-ARTIFICIAL-434302/
 │   └── modelo_gpt.py        # Sprint 4: LayerNorm, GELU, FeedForward, TransformerBlock, GPTModel
 │
 ├── notebooks/               # Notebooks de experimentação e análise
-│   ├── 00_teste_pytorch.ipynb
 │   ├── sprint2.ipynb        # Pipeline de dados e embeddings
 │   ├── sprint3.ipynb        # Mecanismos de atenção
 │   └── sprint4.ipynb        # Arquitetura GPT e inferência autoregressiva
@@ -69,7 +68,7 @@ Texto → Tokenização → Token IDs → Sequências de treinamento → Embeddi
 ```
 
 * **Código modular:** `src/pipeline_dados.py`
-  * Tokenização BPE, construção de vocabulário, conversão para Token IDs.
+  * Tokenização didática por expressão regular, construção de vocabulário e conversão para Token IDs (não BPE).
   * Embeddings de tokens e Positional Embeddings.
   * `DataLoader` para organização de lotes de treinamento.
 * **Experimentos:** `notebooks/sprint2.ipynb`
@@ -121,3 +120,7 @@ O GPT é treinado para prever o próximo caractere, com avaliação por entropia
 - Resultados e análise: `experimentos/sprint5_resultados.json` e `relatorios/analise_sprint5.md`.
 - Reproduzir: `./venv/bin/python -m src.experimento_sprint5`; testes: `./venv/bin/python -m unittest discover -s tests -v`.
 - O checkpoint é gerado em `dataset/sprint5_checkpoint.pt` e não é versionado. O corpus é pequeno e as saídas são experimentais; consulte o relatório para configurações e limitações.
+
+## Objetivo de longo prazo
+
+O projeto evolui em direção a uma IA própria, construída e compreendida de ponta a ponta. O modelo atual é um protótipo didático pequeno, ainda incapaz de atuar como assistente geral. Os próximos passos incluem ampliar e avaliar os dados, adotar tokenização adequada, melhorar a retomada do treinamento e medir as capacidades antes de desenvolver uma interface e um ajuste para instruções.

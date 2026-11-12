@@ -44,11 +44,11 @@ Este glossário técnico reúne os principais conceitos teóricos e práticos ab
 
 ### 5. FeedForward Network (FFN / MLP)
 * **Tradução:** Rede Alimentada Adiante ou Módulo Multicamadas (MLP).
-* **Definição:** Sub-rede densa composta por duas projeções lineares separadas por uma função de ativação não-linear (tipicamente *GELU*) e *Dropout*.
+* **Definição:** Sub-rede densa composta por duas projeções lineares separadas por uma função de ativação não-linear (tipicamente *GELU*).
 * **Função no modelo GPT:** Enquanto a atenção foca na troca de informações entre diferentes tokens ao longo da sequência, a rede Feed-Forward processa e transforma as representações de cada token de forma independente (*position-wise*), expandindo a capacidade de memorização e conhecimento semântico do modelo.
 * **Relação com outros conceitos:** Realiza uma projeção de expansão de dimensão ($d_{model} \to 4 \times d_{model}$) seguida de contração ($4 \times d_{model} \to d_{model}$).
 * **Exemplo computacional:**
-  $$\text{FFN}(x) = \text{Dropout}(\text{GELU}(x W_1 + b_1)) W_2 + b_2$$
+  $$\text{FFN}(x) = \text{GELU}(x W_1 + b_1) W_2 + b_2$$
 
 ---
 
@@ -66,7 +66,7 @@ Este glossário técnico reúne os principais conceitos teóricos e práticos ab
 * **Tradução:** Dropout ou Abandono Aleatório.
 * **Definição:** Técnica de regularização que desativa (zera) aleatoriamente uma fração $p$ dos neurônios/pesos durante a fase de treinamento, reescalonando os restantes por $\frac{1}{1 - p}$.
 * **Função no modelo GPT:** Previne o sobreajuste (*overfitting*), impedindo que os neurônios desenvolvam co-adaptações espúrias nos dados de treino.
-* **Relação com outros conceitos:** Aplicado após os *embeddings*, após a normalização dos pesos de atenção e após as conexões residuais no *Transformer Block*. Durante a inferência/geração, o Dropout deve ser explicitamente desativado (`model.eval()`).
+* **Relação com outros conceitos:** Aplicado após os *embeddings*, após a normalização dos pesos de atenção e nas saídas dos sub-blocos antes das somas residuais no *Transformer Block*. Durante a inferência/geração, o Dropout deve ser explicitamente desativado (`model.eval()`).
 * **Exemplo computacional:** Com taxa $p = 0.1$, aproximadamente 10% das ativações do tensor são substituídas por zero durante o treino.
 
 ---
@@ -119,6 +119,6 @@ Este glossário técnico reúne os principais conceitos teóricos e práticos ab
 ### 12. Amostragem Top-K (Top-K Sampling)
 * **Tradução:** Amostragem Top-K ou Filtragem por $K$ Melhores.
 * **Definição:** Técnica de truncamento na qual apenas os $K$ tokens com os maiores logits são mantidos, enquanto os logits de todos os demais tokens são substituídos por $-\infty$ antes da normalização Softmax.
-* **Função no modelo GPT:** Elimina a "cauda longa" de tokens altamente improváveis e irrelevantes, garantindo que o modelo nunca selecione palavras absurdas ou desconexas durante a amostragem estocástica.
-* **Relação com outros conceitos:** É aplicada logo após o escalonamento por *Temperatura* e antes da função *Softmax*.
+* **Função no modelo GPT:** Elimina a "cauda longa" de tokens altamente improváveis e irrelevantes, reduzindo a chance de selecionar tokens de baixa pontuação, sem garantir coerência.
+* **Relação com outros conceitos:** É aplicada antes da função *Softmax*. Para temperatura positiva, filtrar antes ou depois de escalar preserva a ordem dos logits.
 * **Exemplo conceitual:** Se $K=50$, mesmo que o vocabulário possua 50.257 palavras, o sorteio da próxima palavra será restrito estritamente entre as 50 opções mais plausíveis.

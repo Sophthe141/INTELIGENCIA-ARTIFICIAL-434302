@@ -64,7 +64,7 @@ class FeedForward(nn.Module):
     """
     Rede Feed-Forward posição a posição (Position-wise Feed-Forward Network).
     Aplica uma expansão de dimensão (emb_dim -> 4 * emb_dim), ativação GELU,
-    projeção de retorno (4 * emb_dim -> emb_dim) e Dropout para regularização.
+    projeção de retorno (4 * emb_dim -> emb_dim). O dropout fica no bloco residual.
     """
     def __init__(self, cfg: Dict[str, Any]):
         super().__init__()
@@ -72,8 +72,7 @@ class FeedForward(nn.Module):
         self.layers = nn.Sequential(
             nn.Linear(emb_dim, 4 * emb_dim),
             GELU(),
-            nn.Linear(4 * emb_dim, emb_dim),
-            nn.Dropout(cfg.get("drop_rate", 0.1))
+            nn.Linear(4 * emb_dim, emb_dim)
         )
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
@@ -217,6 +216,8 @@ def generate_text_advanced(
     - Filtragem Top-K (elimina a cauda longa de tokens improváveis)
     - Critério de parada precoce por token especial (eos_id)
     """
+    if eos_id is not None and idx.shape[0] != 1:
+        raise ValueError("eos_id só é suportado para geração com um único exemplo")
     model.eval()
     for _ in range(max_new_tokens):
         idx_cond = idx[:, -context_size:]

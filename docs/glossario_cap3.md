@@ -7,7 +7,7 @@
   * **Key ($k^{(j)}$):** Vetor que atua como rótulo de correspondência.
   * **Value ($v^{(j)}$):** Vetor com o conteúdo de informação a ser agregado.
 * **Pontuações de Atenção (Attention Scores):** Valores escalares obtidos pelo produto escalar entre vetores *Query* e *Key* ($q^{(i)} \cdot k^{(j)}$), medindo a afinidade entre tokens antes da normalização.
-* **Pesos de Atenção (Attention Weights):** Probabilidades obtidas ao aplicar a função Softmax às pontuações de atenção. A soma de todos os pesos referentes a um token é igual a 1.
+* **Pesos de Atenção (Attention Weights):** Probabilidades obtidas ao aplicar a função Softmax às pontuações de atenção. Antes do dropout, os pesos referentes a cada consulta somam 1; após dropout durante o treino, essa soma não é necessariamente 1.
 
 ## Variações e Arquiteturas
 * **Scaled Dot-Product Attention:** Mecanismo em que as pontuações de produto escalar são divididas por $\sqrt{d_k}$ (onde $d_k$ é a dimensão do vetor *Key*). Evita a saturação da função Softmax e previne o desaparecimento de gradientes (*vanishing gradients*) durante o treinamento.

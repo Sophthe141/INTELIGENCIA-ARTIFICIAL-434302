@@ -3,7 +3,7 @@
 ### 1. Token
 * **Tradução:** Token (mantido no original) ou Símbolo.
 * **Definição:** A menor unidade de texto em que uma string é dividida durante o pré-processamento.
-* **Função no modelo:** Serve como a peça fundamental de informação que o modelo vai processar, já que redes neurais não leem frases inteiras de uma vez.
+* **Função no modelo:** Serve como a peça fundamental de informação que o modelo vai processar, que é convertida em um ID para processamento numérico.
 * **Relação com outros conceitos:** É o produto da etapa de *Tokenização* e a entrada para a geração de *Token IDs*.
 * **Exemplo conceitual:** Na frase "Eu amo IA", os tokens poderiam ser ["Eu", "amo", "IA"].
 
@@ -23,7 +23,7 @@
 
 ### 4. Embedding (Word Embedding)
 * **Tradução:** Incorporação (raramente traduzido) ou Vetor de Incorporação.
-* **Definição:** Uma representação vetorial densa e contínua de um Token ID, onde números reais capturam o significado semântico do token.
+* **Definição:** Uma representação vetorial densa e contínua de um Token ID, cujos valores são ajustados durante o treinamento e podem representar propriedades dos tokens.
 * **Função no modelo:** Transformar inteiros isolados em um espaço matemático onde tokens com significados parecidos fiquem próximos, permitindo que a rede neural faça cálculos e identifique padrões de linguagem.
 * **Relação com outros conceitos:** Substitui os *Token IDs* e é somado aos *Positional Embeddings*.
 * **Exemplo conceitual:** O Token ID `2` vira um vetor de 3 dimensões: `[0.34, -1.20, 0.88]`.

@@ -1,16 +1,16 @@
 {
-  "corpus_sha256": "281edf0a9a7aa598cdadfc5f812bc33f4ede4a56e1556e6791240b96c4bcb913",
+  "corpus_sha256": "ec94b67318c3b27f0f27d193996198a3749e159874afeff04a7af21343c5de4d",
   "fontes": [
     "docs/glossario_cap1.md",
     "docs/glossario_cap2.md",
     "docs/glossario_cap3.md",
     "docs/glossario_cap4.md"
   ],
-  "corte_caracteres": 14460,
-  "total_caracteres": 18075,
+  "corte_caracteres": 14554,
+  "total_caracteres": 18193,
   "caracteres_desconhecidos_validacao": 0,
-  "janelas_treino": 451,
-  "janelas_validacao": 112,
+  "janelas_treino": 454,
+  "janelas_validacao": 113,
   "passo": 32,
   "batch_size": 32,
   "config_modelo": {
@@ -32,105 +32,105 @@
       "lr": 0.001,
       "epocas": 8,
       "weight_decay": 0.01,
-      "segundos": 5.969798781999998,
+      "segundos": 6.45741327099995,
       "historico": [
         {
           "epoca": 0,
           "treino": {
-            "loss": 4.764484220492073,
-            "perplexity": 117.27061590589722
+            "loss": 4.763654122793727,
+            "perplexity": 117.17331022974649
           },
           "validacao": {
-            "loss": 4.738440377371652,
-            "perplexity": 114.25586661361281
+            "loss": 4.747109932182109,
+            "perplexity": 115.25072034994295
           }
         },
         {
           "epoca": 1,
           "treino": {
-            "loss": 3.8259396896658346,
-            "perplexity": 45.875889217097175
+            "loss": 3.814462375010688,
+            "perplexity": 45.3523672614699
           },
           "validacao": {
-            "loss": 3.8415673119681224,
-            "perplexity": 46.59845154670898
+            "loss": 3.8325600518589527,
+            "perplexity": 46.18061179358011
           }
         },
         {
           "epoca": 2,
           "treino": {
-            "loss": 3.3902485793551427,
-            "perplexity": 29.673327530284613
+            "loss": 3.380799632765648,
+            "perplexity": 29.394266336747297
           },
           "validacao": {
-            "loss": 3.431277479444231,
-            "perplexity": 30.916112231454747
+            "loss": 3.4237907375909584,
+            "perplexity": 30.685515566026815
           }
         },
         {
           "epoca": 3,
           "treino": {
-            "loss": 3.2935454332643497,
-            "perplexity": 26.93820214587364
+            "loss": 3.2830110457500172,
+            "perplexity": 26.655914161569644
           },
           "validacao": {
-            "loss": 3.340545654296875,
-            "perplexity": 28.23452879487548
+            "loss": 3.3329126539483536,
+            "perplexity": 28.019835047852116
           }
         },
         {
           "epoca": 4,
           "treino": {
-            "loss": 3.197195065788049,
-            "perplexity": 24.46381448043868
+            "loss": 3.1816363481698056,
+            "perplexity": 24.08613462501516
           },
           "validacao": {
-            "loss": 3.252380745751517,
-            "perplexity": 25.851813306600757
+            "loss": 3.235584197846134,
+            "perplexity": 25.421218462797775
           }
         },
         {
           "epoca": 5,
           "treino": {
-            "loss": 3.1058976856409313,
-            "perplexity": 22.329254632325686
+            "loss": 3.085311389704633,
+            "perplexity": 21.87427720639992
           },
           "validacao": {
-            "loss": 3.1758113588605608,
-            "perplexity": 23.94624098336183
+            "loss": 3.151709972229679,
+            "perplexity": 23.376002740166093
           }
         },
         {
           "epoca": 6,
           "treino": {
-            "loss": 3.012341604528829,
-            "perplexity": 20.334960655262712
+            "loss": 2.9857236456766003,
+            "perplexity": 19.800825835148828
           },
           "validacao": {
-            "loss": 3.0893458979470387,
-            "perplexity": 21.962707424357344
+            "loss": 3.0655449470587537,
+            "perplexity": 21.446145817442837
           }
         },
         {
           "epoca": 7,
           "treino": {
-            "loss": 2.9196555582752777,
-            "perplexity": 18.534902166459506
+            "loss": 2.890556738765229,
+            "perplexity": 18.003329963623447
           },
           "validacao": {
-            "loss": 3.0093333380562917,
-            "perplexity": 20.27387959501954
+            "loss": 2.9890761628615117,
+            "perplexity": 19.867319842909232
           }
         },
         {
           "epoca": 8,
           "treino": {
-            "loss": 2.8404233223054467,
-            "perplexity": 17.12301255627675
+            "loss": 2.8132676458568824,
+            "perplexity": 16.664282322183325
           },
           "validacao": {
-            "loss": 2.942322254180908,
-            "perplexity": 18.959824760242295
+            "loss": 2.9247011104516223,
+            "perplexity": 18.6286573067516
           }
         }
       ]
@@ -140,105 +140,105 @@
       "lr": 0.0002,
       "epocas": 8,
       "weight_decay": 0.01,
-      "segundos": 5.887892647999934,
+      "segundos": 6.647338508000075,
       "historico": [
         {
           "epoca": 0,
           "treino": {
-            "loss": 4.764484220492073,
-            "perplexity": 117.27061590589722
+            "loss": 4.763654122793727,
+            "perplexity": 117.17331022974649
           },
           "validacao": {
-            "loss": 4.738440377371652,
-            "perplexity": 114.25586661361281
+            "loss": 4.747109932182109,
+            "perplexity": 115.25072034994295
           }
         },
         {
           "epoca": 1,
           "treino": {
-            "loss": 4.584668087589239,
-            "perplexity": 97.97066406570701
+            "loss": 4.582698555244749,
+            "perplexity": 97.77789756625891
           },
           "validacao": {
-            "loss": 4.5661846569606235,
-            "perplexity": 96.17646267151616
+            "loss": 4.572550604828691,
+            "perplexity": 96.79066995053465
           }
         },
         {
           "epoca": 2,
           "treino": {
-            "loss": 4.3932948503684575,
-            "perplexity": 80.90655529356654
+            "loss": 4.387374346476819,
+            "perplexity": 80.42896290694486
           },
           "validacao": {
-            "loss": 4.382771083286831,
-            "perplexity": 80.05957806268746
+            "loss": 4.383779728307133,
+            "perplexity": 80.14037049602109
           }
         },
         {
           "epoca": 3,
           "treino": {
-            "loss": 4.166405609071651,
-            "perplexity": 64.48325702336584
+            "loss": 4.15267017969476,
+            "perplexity": 63.60360681684543
           },
           "validacao": {
-            "loss": 4.164953640529087,
-            "perplexity": 64.389697301969
+            "loss": 4.15701030629926,
+            "perplexity": 63.88025443150911
           }
         },
         {
           "epoca": 4,
           "treino": {
-            "loss": 3.921843286099825,
-            "perplexity": 50.4934328928708
+            "loss": 3.9003452361942914,
+            "perplexity": 49.41950756347716
           },
           "validacao": {
-            "loss": 3.9306535039629256,
-            "perplexity": 50.94025645357319
+            "loss": 3.9139596635261467,
+            "perplexity": 50.09692673157503
           }
         },
         {
           "epoca": 5,
           "treino": {
-            "loss": 3.715426282713524,
-            "perplexity": 41.07609338135933
+            "loss": 3.694965474931154,
+            "perplexity": 40.244183130792976
           },
           "validacao": {
-            "loss": 3.734172821044922,
-            "perplexity": 41.853390996354335
+            "loss": 3.71757394444626,
+            "perplexity": 41.16440573383004
           }
         },
         {
           "epoca": 6,
           "treino": {
-            "loss": 3.58055659091129,
-            "perplexity": 35.89351329157897
+            "loss": 3.5602907724842625,
+            "perplexity": 35.1734231219394
           },
           "validacao": {
-            "loss": 3.6060764448983327,
-            "perplexity": 36.82129863091966
+            "loss": 3.590589658348961,
+            "perplexity": 36.2554479523409
           }
         },
         {
           "epoca": 7,
           "treino": {
-            "loss": 3.4933466033766383,
-            "perplexity": 32.89585307178952
+            "loss": 3.47643957369128,
+            "perplexity": 32.34435712348685
           },
           "validacao": {
-            "loss": 3.5234831060682024,
-            "perplexity": 33.90230838660302
+            "loss": 3.511849586942555,
+            "perplexity": 33.510190511370226
           }
         },
         {
           "epoca": 8,
           "treino": {
-            "loss": 3.4351742251749315,
-            "perplexity": 31.036819489808163
+            "loss": 3.4217100731601797,
+            "perplexity": 30.621735680527525
           },
           "validacao": {
-            "loss": 3.468646969114031,
-            "perplexity": 32.093289842636366
+            "loss": 3.4606754125747003,
+            "perplexity": 31.838473359497094
           }
         }
       ]
@@ -248,201 +248,201 @@
       "lr": 0.001,
       "epocas": 16,
       "weight_decay": 0.01,
-      "segundos": 12.344517234000023,
+      "segundos": 13.383817310999802,
       "historico": [
         {
           "epoca": 0,
           "treino": {
-            "loss": 4.764484220492073,
-            "perplexity": 117.27061590589722
+            "loss": 4.763654122793727,
+            "perplexity": 117.17331022974649
           },
           "validacao": {
-            "loss": 4.738440377371652,
-            "perplexity": 114.25586661361281
+            "loss": 4.747109932182109,
+            "perplexity": 115.25072034994295
           }
         },
         {
           "epoca": 1,
           "treino": {
-            "loss": 3.8259396896658346,
-            "perplexity": 45.875889217097175
+            "loss": 3.814462375010688,
+            "perplexity": 45.3523672614699
           },
           "validacao": {
-            "loss": 3.8415673119681224,
-            "perplexity": 46.59845154670898
+            "loss": 3.8325600518589527,
+            "perplexity": 46.18061179358011
           }
         },
         {
           "epoca": 2,
           "treino": {
-            "loss": 3.3902485793551427,
-            "perplexity": 29.673327530284613
+            "loss": 3.380799632765648,
+            "perplexity": 29.394266336747297
           },
           "validacao": {
-            "loss": 3.431277479444231,
-            "perplexity": 30.916112231454747
+            "loss": 3.4237907375909584,
+            "perplexity": 30.685515566026815
           }
         },
         {
           "epoca": 3,
           "treino": {
-            "loss": 3.2935454332643497,
-            "perplexity": 26.93820214587364
+            "loss": 3.2830110457500172,
+            "perplexity": 26.655914161569644
           },
           "validacao": {
-            "loss": 3.340545654296875,
-            "perplexity": 28.23452879487548
+            "loss": 3.3329126539483536,
+            "perplexity": 28.019835047852116
           }
         },
         {
           "epoca": 4,
           "treino": {
-            "loss": 3.197195065788049,
-            "perplexity": 24.46381448043868
+            "loss": 3.1816363481698056,
+            "perplexity": 24.08613462501516
           },
           "validacao": {
-            "loss": 3.252380745751517,
-            "perplexity": 25.851813306600757
+            "loss": 3.235584197846134,
+            "perplexity": 25.421218462797775
           }
         },
         {
           "epoca": 5,
           "treino": {
-            "loss": 3.1058976856409313,
-            "perplexity": 22.329254632325686
+            "loss": 3.085311389704633,
+            "perplexity": 21.87427720639992
           },
           "validacao": {
-            "loss": 3.1758113588605608,
-            "perplexity": 23.94624098336183
+            "loss": 3.151709972229679,
+            "perplexity": 23.376002740166093
           }
         },
         {
           "epoca": 6,
           "treino": {
-            "loss": 3.012341604528829,
-            "perplexity": 20.334960655262712
+            "loss": 2.9857236456766003,
+            "perplexity": 19.800825835148828
           },
           "validacao": {
-            "loss": 3.0893458979470387,
-            "perplexity": 21.962707424357344
+            "loss": 3.0655449470587537,
+            "perplexity": 21.446145817442837
           }
         },
         {
           "epoca": 7,
           "treino": {
-            "loss": 2.9196555582752777,
-            "perplexity": 18.534902166459506
+            "loss": 2.890556738765229,
+            "perplexity": 18.003329963623447
           },
           "validacao": {
-            "loss": 3.0093333380562917,
-            "perplexity": 20.27387959501954
+            "loss": 2.9890761628615117,
+            "perplexity": 19.867319842909232
           }
         },
         {
           "epoca": 8,
           "treino": {
-            "loss": 2.8404233223054467,
-            "perplexity": 17.12301255627675
+            "loss": 2.8132676458568824,
+            "perplexity": 16.664282322183325
           },
           "validacao": {
-            "loss": 2.942322254180908,
-            "perplexity": 18.959824760242295
+            "loss": 2.9247011104516223,
+            "perplexity": 18.6286573067516
           }
         },
         {
           "epoca": 9,
           "treino": {
-            "loss": 2.7770414801764645,
-            "perplexity": 16.071402979102032
+            "loss": 2.751870033499428,
+            "perplexity": 15.671911498227747
           },
           "validacao": {
-            "loss": 2.8879078115735735,
-            "perplexity": 17.955703560628226
+            "loss": 2.8749501789565635,
+            "perplexity": 17.72454104433465
           }
         },
         {
           "epoca": 10,
           "treino": {
-            "loss": 2.727496823820465,
-            "perplexity": 15.294554099398043
+            "loss": 2.702905857615534,
+            "perplexity": 14.923032989808213
           },
           "validacao": {
-            "loss": 2.843157018933977,
-            "perplexity": 17.169885717282593
+            "loss": 2.831272386871608,
+            "perplexity": 16.967035729329556
           }
         },
         {
           "epoca": 11,
           "treino": {
-            "loss": 2.688902769279057,
-            "perplexity": 14.715520737653904
+            "loss": 2.6571072177214767,
+            "perplexity": 14.25499280631359
           },
           "validacao": {
-            "loss": 2.814742020198277,
-            "perplexity": 16.6888698336009
+            "loss": 2.796514492119308,
+            "perplexity": 16.38742860030131
           }
         },
         {
           "epoca": 12,
           "treino": {
-            "loss": 2.648585660494616,
-            "perplexity": 14.134034179246953
+            "loss": 2.6216783145450813,
+            "perplexity": 13.758795805563889
           },
           "validacao": {
-            "loss": 2.7792813096727644,
-            "perplexity": 16.10744052545499
+            "loss": 2.7753029502598587,
+            "perplexity": 16.04348663794956
           }
         },
         {
           "epoca": 13,
           "treino": {
-            "loss": 2.6160910282853966,
-            "perplexity": 13.68213583483953
+            "loss": 2.5837746790327163,
+            "perplexity": 13.247047256512639
           },
           "validacao": {
-            "loss": 2.7614311490740096,
-            "perplexity": 15.822471067108745
+            "loss": 2.7465901016134078,
+            "perplexity": 15.589382937308836
           }
         },
         {
           "epoca": 14,
           "treino": {
-            "loss": 2.583244122845635,
-            "perplexity": 13.24002081775524
+            "loss": 2.553354963857172,
+            "perplexity": 12.850143310629006
           },
           "validacao": {
-            "loss": 2.742363248552595,
-            "perplexity": 15.523627972510926
+            "loss": 2.7298255093329775,
+            "perplexity": 15.330211807630286
           }
         },
         {
           "epoca": 15,
           "treino": {
-            "loss": 2.554822613553303,
-            "perplexity": 12.869016665903397
+            "loss": 2.522958520225491,
+            "perplexity": 12.465421364632583
           },
           "validacao": {
-            "loss": 2.7236380577087402,
-            "perplexity": 15.235649714558248
+            "loss": 2.7112500878561914,
+            "perplexity": 15.048075177850878
           }
         },
         {
           "epoca": 16,
           "treino": {
-            "loss": 2.5290924255176552,
-            "perplexity": 12.542118063378682
+            "loss": 2.491483763976244,
+            "perplexity": 12.079185490813357
           },
           "validacao": {
-            "loss": 2.704780238015311,
-            "perplexity": 14.951030661295851
+            "loss": 2.6987766122396013,
+            "perplexity": 14.86153917374383
           }
         }
       ],
       "geracoes": {
         "greedy": "O modelo de linguagema de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de de",
-        "amostragem": "O modelo de linguagemos meinitincepese êI* dadentemenis d:*Hetrio Unde *gedato.ttinra -a * e to aco Nero vaçH étramo Cipe",
-        "temperatura_baixa": "O modelo de linguagemos me altinco due ê ** adententemo de petrio ande ****+ ato ** de prose to aco os o deção tremo Co (",
-        "top_k": "O modelo de linguagemos me altinco due pa mena ontelomo de petrio ande o edato ttere e prese to ado os o dente tenenta pe"
+        "amostragem": "O modelo de linguagemos me altincores pêI**** pontelomo d:***Fudo Unde ****+ `Totrera -pr) e to aco Nero vaçH étramona pr",
+        "temperatura_baixa": "O modelo de linguagemos te altincores pê **** dontelomo do pedado ande ****+ dittrera da dee to aco os denstututramo Co d",
+        "top_k": "O modelo de linguagemos te altincores petemo dententemo do pedado ande ***** ato ** de prose to ado (xqutestututre nta pr"
       },
       "checkpoint_inferencia_identica": true
     }

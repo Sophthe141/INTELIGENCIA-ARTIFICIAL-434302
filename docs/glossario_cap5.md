@@ -1,5 +1,7 @@
 # Glossário — Capítulo 5: treinamento e avaliação
 
+Base: Sebastian Raschka, *Build a Large Language Model (From Scratch)*, capítulo 5, PDF em `livro/`. Os exemplos numéricos são próprios.
+
 Os glossários dos capítulos anteriores estão em `docs/glossario_cap1.md` a `docs/glossario_cap4.md`; juntos com este arquivo formam o glossário cumulativo.
 
 ## Cross-entropy loss — perda de entropia cruzada
