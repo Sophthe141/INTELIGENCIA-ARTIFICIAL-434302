@@ -111,3 +111,13 @@ Integração de todos os componentes anteriores em uma arquitetura GPT funcional
   * `experimento4_layernorm.md` + `grafico_layernorm_sprint4.png`: Impacto do Layer Normalization.
   * `experimento4_geracao.md` + `grafico_geracao_temp_topk.png`: Efeito de Temperatura e Top-K na geração.
 * **Entregáveis:** `docs/glossario_cap4.md`, `src/modelo_gpt.py`, `notebooks/sprint4.ipynb`
+
+### ✅ Sprint 5 — Treinamento e avaliação (Capítulo 5)
+
+O GPT é treinado para prever o próximo caractere, com avaliação por entropia cruzada e perplexidade em conjuntos separados. Os experimentos comparam taxas de aprendizado, épocas e estratégias de geração, além de salvar e carregar pesos.
+
+- Código: `src/treinamento.py` e `src/experimento_sprint5.py`.
+- Glossário: `docs/glossario_cap5.md` (complementa os capítulos anteriores).
+- Resultados e análise: `experimentos/sprint5_resultados.json` e `relatorios/analise_sprint5.md`.
+- Reproduzir: `./venv/bin/python -m src.experimento_sprint5`; testes: `./venv/bin/python -m unittest discover -s tests -v`.
+- O checkpoint é gerado em `dataset/sprint5_checkpoint.pt` e não é versionado. O corpus é pequeno e as saídas são experimentais; consulte o relatório para configurações e limitações.
