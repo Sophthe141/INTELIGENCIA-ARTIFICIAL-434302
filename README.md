@@ -124,3 +124,7 @@ O GPT é treinado para prever o próximo caractere, com avaliação por entropia
 ## Objetivo de longo prazo
 
 O projeto evolui em direção a uma IA própria, construída e compreendida de ponta a ponta. O modelo atual é um protótipo didático pequeno, ainda incapaz de atuar como assistente geral. Os próximos passos incluem ampliar e avaliar os dados, adotar tokenização adequada, melhorar a retomada do treinamento e medir as capacidades antes de desenvolver uma interface e um ajuste para instruções.
+
+### Sprint 6 — iniciada
+
+O [glossário de adaptação e fine-tuning](docs/glossario_cap6_7.md) reúne os conceitos dos capítulos 6 e 7. O carregamento de pesos pré-treinados e os ajustes para classificação e instruções permanecem como próximos entregáveis.
